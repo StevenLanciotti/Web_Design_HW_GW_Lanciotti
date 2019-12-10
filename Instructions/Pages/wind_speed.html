@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Test</title>
+    <title>Weather Data</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
@@ -17,12 +17,12 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-expand-lg">
-        <a class="navbar-brand" href="weather.html">Latitude</a>
+        <a class="navbar-brand" href="../weather.html">Latitude</a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -34,38 +34,33 @@
                         Plots
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="Pages/max_temperature.html">Max Temperature</a>
-                        <a class="dropdown-item" href="Pages/humidity.html">Humidity</a>
-                        <a class="dropdown-item" href="Pages/cloudiness.html">Cloudiness</a>
-                        <a class="dropdown-item" href="Pages/wind_speed.html">Wind Speed</a>
+                        <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+                        <a class="dropdown-item" href="humidity.html">Humidity</a>
+                        <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                        <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
                     </div>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="Pages/comparison.html">Comparison <span
-                            class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="comparison.html">Comparison <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="Pages/data.html">Data<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="data.html">Data<span class="sr-only">(current)</span></a>
                 </li>
             </ul>
         </div>
     </nav>
-
     <div class="container" style="margin-top: 50px;">
         <section class="row">
             <div class="col-md-8" id="lp_summary">
                
-                <h1>Summary: Latitude vs. X</h1>
+                <h1>Latitude vs. Wind Speed</h1>
                 <div class="border-top my-3"></div>
-                <div class="image-wrapper float-left">
-                    <img class="card-img-top" alt="Summary Image" src="Images/City Latitude vs Max Temperature.png">
+                <div class="image-wrapper">
+                    <img class="card-img-top" alt="Summary Image" src="../Images/City Latitude vs Wind Speed.png">
                 </div>
 
                 <p>
-                    The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset of over 500 cities.
-                </p>
-                <p>
-                    After assembling the dataset, we used MatPlotLib to plot various aspects of the weather vs. latitude. Factors we considered were: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.
+                When observing Latitude vs. Wind Speed the most notable relationship may be the fan-like shape when moving away from the equator. That is, as you start to look at areas further away from the equator, it can be seen that there is a greater number of data points moving away from the clustering (broadly speaking, outliers).
                 </p>
 
             </div>
@@ -77,18 +72,18 @@
 
                             <h1>Visualizations</h1>
                             <div class="border-top my-3"></div>
-                            <a href="Pages/max_temperature.html"><img class="card-img-top imageNav-photo" alt="City Latitude vs Max Temperature"
-                                    src="Images/City Latitude vs Max Temperature.png" >
+                            <a href="max_temperature.html"><img class="card-img-top imageNav-photo" alt="City Latitude vs Max Temperature"
+                                    src="../Images/City Latitude vs Max Temperature.png" >
                             </a>
-                            <a href="Pages/humidity.html"><img class="card-img-top imageNav-photo" alt="City Latitude vs Humidity"
-                                    src="Images/City Latitude vs Humidity.png">
+                            <a href="humidity.html"><img class="card-img-top imageNav-photo" alt="City Latitude vs Humidity"
+                                    src="../Images/City Latitude vs Humidity.png">
                             </a>
 
-                            <a href="Pages/cloudiness.html"><img class="card-img-top imageNav-photo" alt="City Latitude vs Cloudiness"
-                                    src="Images/City Latitude vs Cloudiness.png">
+                            <a href="cloudiness.html"><img class="card-img-top imageNav-photo"  alt="City Latitude vs Cloudiness"
+                                    src="../Images/City Latitude vs Cloudiness.png">
                             </a>
-                            <a href="Pages/wind_speed.html"><img class="card-img-top imageNav-photo" alt="City Latitude vs Wind Speed"
-                                    src="Images/City Latitude vs Wind Speed.png">
+                            <a href="wind_speed.html"><img class="card-img-top imageNav-photo" id="active" alt="City Latitude vs Wind Speed"
+                                    src="../Images/City Latitude vs Wind Speed.png">
                             </a>
 
 
@@ -99,11 +94,6 @@
 
 
     </div>
-
-
-
-
 </body>
 
 </html>
-

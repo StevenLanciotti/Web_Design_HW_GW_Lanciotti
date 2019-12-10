@@ -1,4 +1,4 @@
-body {
+  body {
     background-color: #d1d1d1 ;
     margin:0;
     padding:0
@@ -10,4 +10,27 @@ body {
   .navbar{
     padding-bottom: 3px;
     padding-top: 3px;
+  }
+
+  .imageNav-photo {
+    width: 140px;
+    /* Box-model */
+    height: 140px;
+  }
+
+  #lp_summary {
+    background-color: white;
+    margin-right: auto;
+  }
+  #lp_charts {
+    background-color: white;
+  }
+
+  #active {
+    border-style: solid;
+    border-color: rgb(0, 102, 255);
+  }
+
+  #table {
+    background-color: white;
   }
